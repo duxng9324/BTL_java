@@ -70,7 +70,7 @@ public class Sach {
 
     @Override
     public String toString() {
-        return "Sach{" + "maSach=" + maSach + ", ten=" + ten + ", tacGia=" + tacGia + ", soLuong=" + soLuong + ", muon=" + muon + '}';
+        return maSach + "," + ten +"," + tacGia +"," + soLuong + "," + muon ;
     }
 
     public void setMuon(boolean muon) {

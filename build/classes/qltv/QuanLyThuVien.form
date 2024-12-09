@@ -24,23 +24,23 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace pref="61" max="32767" attributes="0"/>
+              <EmptySpace pref="287" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="txtTitle" min="-2" pref="613" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="248" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="btnQuanLyDocGia" max="32767" attributes="0"/>
-                          <Component id="btnQuanLyScah" max="32767" attributes="0"/>
-                          <Component id="btnQuanLyMuonTra" pref="443" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnQuanLyDocGia" min="-2" pref="443" max="-2" attributes="0"/>
+                          <Component id="btnQuanLyScah" min="-2" pref="443" max="-2" attributes="0"/>
+                          <Component id="btnQuanLyMuonTra" alignment="0" min="-2" pref="443" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="341" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -49,17 +49,17 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="txtTitle" min="-2" pref="42" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
               <Component id="btnQuanLyScah" min="-2" pref="36" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
               <Component id="btnQuanLyDocGia" min="-2" pref="33" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               <Component id="btnQuanLyMuonTra" min="-2" pref="32" max="-2" attributes="0"/>
-              <EmptySpace pref="71" max="32767" attributes="0"/>
+              <EmptySpace pref="138" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
