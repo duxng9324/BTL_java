@@ -59,6 +59,11 @@ public class QuanLyThuVien extends javax.swing.JFrame {
         });
 
         jButton1.setText("Đăng xuất");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -100,11 +105,15 @@ public class QuanLyThuVien extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnQuanLyDocGiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanLyDocGiaActionPerformed
-        // TODO add your handling code here:
+        QuanLyDocGia docGia = new QuanLyDocGia();
+        docGia.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnQuanLyDocGiaActionPerformed
 
     private void btnQuanLyMuonTraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanLyMuonTraActionPerformed
-        // TODO add your handling code here:
+        QuanLyMuonTra m = new QuanLyMuonTra();
+        m.setVisible(true);
+        dispose();
     }//GEN-LAST:event_btnQuanLyMuonTraActionPerformed
 
     private void btnQuanLyScahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuanLyScahActionPerformed
@@ -112,6 +121,12 @@ public class QuanLyThuVien extends javax.swing.JFrame {
         sach.setVisible(true);
         dispose();
     }//GEN-LAST:event_btnQuanLyScahActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        DangNhapForm dn = new DangNhapForm();
+        dn.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

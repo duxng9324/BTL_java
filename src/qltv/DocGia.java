@@ -8,13 +8,19 @@ import java.util.ArrayList;
 public class DocGia {
     private String maDocGia;
     private String ten;
-    private int tuoi;
+    private String sdt;
     private String diaChi;
-
-    public DocGia(String maDocGia, String ten, int tuoi, String diaChi) {
+    
+    public DocGia(){
+        this.maDocGia = "";
+        this.ten = "";
+        this.sdt = "";
+        this.diaChi = "";
+    }
+    public DocGia(String maDocGia, String ten, String sdt, String diaChi) {
         this.maDocGia = maDocGia;
         this.ten = ten;
-        this.tuoi = tuoi;
+        this.sdt = sdt;
         this.diaChi = diaChi;
     }
 
@@ -34,12 +40,12 @@ public class DocGia {
         this.ten = ten;
     }
 
-    public int getTuoi() {
-        return tuoi;
+    public String getSDT() {
+        return sdt;
     }
 
-    public void setTuoi(int tuoi) {
-        this.tuoi = tuoi;
+    public void setSDT(String sdt) {
+        this.sdt = sdt;
     }
 
     public String getDiaChi() {
@@ -52,12 +58,7 @@ public class DocGia {
 
     @Override
     public String toString() {
-        return "DocGia{" +
-                "Mã Độc Giả='" + maDocGia + '\'' +
-                ", Tên='" + ten + '\'' +
-                ", Tuổi=" + tuoi +
-                ", Địa Chỉ='" + diaChi + '\'' +
-                '}';
+        return maDocGia + "," + ten + "," + sdt + "," + diaChi;
     }
     
     public static ArrayList<DocGia> getDocGia (){
@@ -70,10 +71,10 @@ public class DocGia {
                 if (data.length == 4) {
                     String maDocGia = data[0];
                     String ten = data[1];
-                    int tuoi = Integer.parseInt(data[2]);
+                    String sdt = data[2];
                     String diaChi = data[3];
 
-                    DocGia docGia = new DocGia(maDocGia, ten, tuoi, diaChi);
+                    DocGia docGia = new DocGia(maDocGia, ten, sdt, diaChi);
                     danhSachDocGia.add(docGia);
                 }
             }

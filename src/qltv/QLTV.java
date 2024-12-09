@@ -15,8 +15,8 @@ public class QLTV {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        QuanLyThuVien qltv = new QuanLyThuVien();
-        qltv.setVisible(true);
+        DangNhapForm dn = new DangNhapForm();
+        dn.setVisible(true);
     }
     
 }

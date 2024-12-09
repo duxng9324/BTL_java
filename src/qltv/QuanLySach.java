@@ -43,6 +43,7 @@ public class QuanLySach extends javax.swing.JFrame {
         tblModel.setColumnIdentifiers(columns);
         tblSach.setModel(tblModel);
     }
+     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -391,17 +392,27 @@ public class QuanLySach extends javax.swing.JFrame {
 
     private void btlRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btlRemoveActionPerformed
         int selectedRow = tblSach.getSelectedRow();
-    if (selectedRow >= 0) {
-        String maSach = (String) tblSach.getValueAt(selectedRow, 1);
+        if (selectedRow >= 0) {
+            String maSach = (String) tblSach.getValueAt(selectedRow, 1);
 
         // Xóa sách khỏi danh sách
-        danhSachSach.removeIf(sach -> sach.getMaSach().equals(maSach));
-        fillTable();  // Cập nhật lại bảng
+            danhSachSach.removeIf(sach -> sach.getMaSach().equals(maSach));
+            fillTable();  // Cập nhật lại bảng
 
-        JOptionPane.showMessageDialog(this, "Xóa sách thành công!", "Success", JOptionPane.INFORMATION_MESSAGE);
-    } else {
-        JOptionPane.showMessageDialog(this, "Vui lòng chọn sách để xóa!", "Error", JOptionPane.ERROR_MESSAGE);
-    }
+        // Cập nhật lại file Sach.txt
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter("CSDL\\Sach.txt"))) {
+                for (Sach sach : danhSachSach) {
+                    bw.write(sach.toString());
+                    bw.newLine();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+                JOptionPane.showMessageDialog(this, "Lỗi ghi file: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+            JOptionPane.showMessageDialog(this, "Xóa sách thành công!", "Success", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(this, "Vui lòng chọn sách để xóa!", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_btlRemoveActionPerformed
 
     /**
