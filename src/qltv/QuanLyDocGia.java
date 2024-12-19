@@ -81,7 +81,7 @@ public class QuanLyDocGia extends javax.swing.JFrame {
 
         jLabel2.setText("Tên đọc giả: ");
 
-        jLabel3.setText("Tuổi :");
+        jLabel3.setText("Số điện thoại: ");
 
         jLabel4.setText("Địa chỉ: ");
 
